@@ -10,7 +10,7 @@ Requirements
  
 How to:
 =====================================
-In the header you must include ptr.css and ptr.js. After that you will use the function like this:
+In the header you must include <strong>ptr.css</strong> and <strong>ptr.js</strong>. After that you will use the function like this:
 
 <pre>jqPTR([target], [callback]);</pre>
 
@@ -23,3 +23,7 @@ jqPTR('ptr',function (){
 	setTimeout(jqPTR_refresh, 1000); 
 });
 </pre>
+
+Demo:
+=====================================
+If you unzip the files you have a working demo. You can also check it out on http://dev.alurosu.com/ptr/.
