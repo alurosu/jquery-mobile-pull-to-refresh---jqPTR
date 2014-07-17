@@ -12,7 +12,7 @@ How to:
 =====================================
 In the header you must include <strong>ptr.css</strong> and <strong>ptr.js</strong>. After that you will use the function like this:
 
-<pre>jqPTR([target], [callback]);</pre>
+<pre>jqPTR([target_id], [callback]);</pre>
 
 <pre>
 jqPTR('ptr',function (){ 
