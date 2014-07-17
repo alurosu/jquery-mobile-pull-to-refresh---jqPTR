@@ -24,6 +24,10 @@ jqPTR('ptr',function (){
 });
 </pre>
 
+Don't forget to use <b>jqPTR_refresh</b> after your callback finished processing. 
+
+<pre>jqPTR_refresh();</pre>
+
 Demo:
 =====================================
 If you unzip the files you have a working demo. You can also check it out on http://dev.alurosu.com/ptr/.
