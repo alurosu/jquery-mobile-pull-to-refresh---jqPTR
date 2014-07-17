@@ -17,7 +17,7 @@ function jqPTR(id, callback) {
 					doResult = true;
 					$('#ptr .loading').css({marginTop: '0px'});
 				}
-				console.log(dif);
+				
 				e.preventDefault();
 			}
 	})
