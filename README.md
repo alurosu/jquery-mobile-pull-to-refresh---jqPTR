@@ -12,8 +12,9 @@ How to:
 =====================================
 In the header you must include ptr.css and ptr.js. After that you will use the function like this:
 
-jqPTR([target], [callback]);
+<pre>jqPTR([target], [callback]);</pre>
 
+<pre>
 jqPTR('ptr',function (){ 
 	console.log('Done!'); 
 	
@@ -21,3 +22,4 @@ jqPTR('ptr',function (){
 	// I've added setTimeout because I do not have to wait for an ajax call response
 	setTimeout(jqPTR_refresh, 1000); 
 });
+</pre>
