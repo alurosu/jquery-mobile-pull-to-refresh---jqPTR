@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>jQuery Pull to refresh</title>
+  
+	<link rel="stylesheet" href="includes/jqmobile.css" />
+	<link rel="stylesheet" href="ptr.css" />
+  <script type="text/javascript" src="includes/jquery.js"></script>
+  <script type="text/javascript" src="includes/jqmobile.js"></script>
+  <script type="text/javascript" src="ptr.js"></script>
+  
+  <script type="text/javascript">
+  	function start() {
+			jqPTR('ptr',function (){ 
+				console.log('Done!'); 
+				
+				// usually you call just jqPTR_refresh(); 
+				// I've added setTimeout because I do not have to wait for an ajax call response
+				setTimeout(jqPTR_refresh, 1000); 
+			});
+		}
+  </script>
+</head>
+
+<body onload="start();">
+
+  <div data-role="page" id="main">
+  	<div data-role="header">
+    	<h1>jqPTR Demo</h1>
+    </div><!-- /header -->
+    
+    <div role="main" class="ui-content" id="ptr">
+      <div class="loading">
+  			Pull to refresh!
+  		</div>
+  		<div>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia euismod aliquam. Quisque molestie euismod feugiat. Aliquam varius gravida leo, at adipiscing eros placerat ut. Sed orci massa, mollis eu diam ut, eleifend placerat orci. Pellentesque quis dui ut elit molestie lacinia rutrum ac turpis. Nullam feugiat interdum nisi, a tincidunt dolor posuere id. Aenean leo ante, pellentesque eleifend lorem eu, dapibus interdum dolor. Sed urna tortor, semper quis ornare in, scelerisque at neque. Nam viverra et tellus tincidunt suscipit. Vestibulum fermentum magna eget tempor consectetur. Nulla sodales molestie sem, quis ultricies tortor fringilla vitae. Integer eget euismod sem. Integer sodales, diam eget viverra aliquet, magna sapien sagittis mauris, ut venenatis nulla velit sed sem.
+  
+  Nam sollicitudin consequat odio, eu laoreet tellus ornare in. Maecenas tortor odio, congue bibendum tincidunt quis, facilisis eget lectus. Mauris condimentum, dolor in tincidunt eleifend, felis ipsum condimentum metus, quis vehicula orci eros ut massa. Nulla neque ante, venenatis nec dignissim id, mattis non lorem. Aenean pellentesque eget nulla nec ullamcorper. Suspendisse dignissim blandit mattis. Donec sit amet nunc vulputate sem aliquet euismod. Sed egestas iaculis mi, a malesuada tellus facilisis id. Nulla at velit ut nisl bibendum placerat sit amet at ligula. Etiam tempor eu neque a pellentesque. In rutrum vulputate interdum. Vestibulum non enim tincidunt, auctor augue tincidunt, sollicitudin eros. Donec nisi est, tempus non placerat ut, pharetra a nulla. Mauris ullamcorper pellentesque massa. Aenean at lorem tristique odio dictum malesuada. Sed pellentesque urna eget laoreet dictum.
+  
+  Vivamus eget urna id est tempus scelerisque. Duis sagittis purus sem, a aliquet dolor varius eget. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce tincidunt, libero ac venenatis mollis, purus ligula euismod ligula, id placerat sapien nisl ut mi. Ut pharetra id odio ut aliquet. Nullam facilisis dapibus adipiscing. Duis non lacus odio. In pulvinar urna non risus convallis commodo. Donec volutpat, nisl eu adipiscing tristique, mi lacus tincidunt neque, ac consectetur orci justo non diam. Morbi mi elit, vehicula a elementum a, dictum id est. Phasellus eget ante molestie, sodales urna suscipit, posuere orci.
+  
+  Donec massa erat, ornare sit amet lectus sit amet, tristique euismod lectus. Suspendisse quam lectus, hendrerit eu nisi nec, placerat porta diam. Donec fermentum metus ac sem rutrum dignissim. Etiam viverra libero quis tincidunt vehicula. Phasellus vitae tellus semper metus vehicula ornare. Aenean pellentesque ligula quis eros tincidunt dictum. Fusce nibh urna, molestie id venenatis nec, porta ac metus. Suspendisse mattis felis id purus ultrices fermentum. Maecenas ut interdum turpis. Nulla elementum ullamcorper turpis, in semper risus accumsan et. Nulla facilisi. Cras nunc metus, tristique nec mauris ut, ullamcorper pellentesque metus. Mauris consequat id metus non semper. Praesent pretium elit nulla, sed dapibus leo tristique eu.
+  
+  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer volutpat, nunc vel mollis viverra, massa lacus convallis erat, vitae euismod est quam et tellus. Suspendisse massa diam, pulvinar posuere volutpat a, auctor id neque. Maecenas pulvinar cursus lorem. Nulla suscipit semper sapien, nec accumsan magna aliquam tempus. Morbi posuere massa sit amet erat consectetur consectetur. Nulla posuere, quam id ultrices fringilla, quam quam iaculis ante, a vulputate sem lorem sed lorem.
+  		</div>
+    </div><!-- /content -->
+  </div><!-- /main -->
+</body>
+</html>
