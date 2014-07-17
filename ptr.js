@@ -1,3 +1,5 @@
+// Made by Rosu Lucian Adrian - http://alurosu.com/
+
 var y;
 var scrolling = false;
 var doResult = false;
