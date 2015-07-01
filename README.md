@@ -30,4 +30,4 @@ Don't forget to use <b>jqPTR_refresh</b> after your callback finished processing
 
 Demo:
 =====================================
-If you unzip the files you have a working demo. You can also check it out on http://dev.alurosu.com/ptr/.
+If you unzip the files you have a working demo. You can also check it out on http://dev.springforce.co/ptr/.
